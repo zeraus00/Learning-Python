@@ -38,6 +38,11 @@ human = False
 Legal_Age = True
 print(human)
 print(Legal_Age)
+age = 20;
+if age >= 18:
+    print(f"\nYou are {age} years old, you are legal age.\n")
+else:
+    print(f"\nYou are {age} years old, you are underage.\n")
 
 print(f"Are you a human: {str(human)}\nAre you a legal age: {str(Legal_Age)}\n")
 # init, float, and double
