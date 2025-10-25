@@ -9,3 +9,5 @@ print("Trinidad", end = " ")
 print() # print only a new line to ensure the cursor moves to the next line
 
 print("helloo")
+success = "Sucessfully uploaded.\n"
+print(f"Message{success}")
