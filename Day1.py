@@ -115,7 +115,27 @@ print(f"{degreeF} = degrees F = {degreesC} degrees C")
 
 Name = input("Enter your name: ")
 print(f"\n Hello {Name}! welcome to your simple activity program.\n")
+print("Press enter to continue...")
 
-num1, num2 = 0, 0
-result = num1
-print()
+print("\nBasic Calculator\n")
+num1 = float(input("Enter the first number: "))
+num2 = float(input("\nEnter the second number: "))
+
+print("\n1. Addition\n2.Subtraction\n3.Multiplication\n4.Division\n")
+operator = int(input("Pick operator: "))
+if operator == 1:
+    result = num1 + num2
+    print(f"{num1} + {num2} = {result}\n")
+elif operator == 2:
+    result = num1 - num2
+    print(f"{num1} - {num2} = {result}\n")
+elif operator == 3:
+    result = num1 * num2
+    print(f"{num1} * {num2} = {result}\n")
+else:
+    result = num1 / num2
+    print(f"{num1} / {num2} = {result}\n")
+
+print(input("\nPress Enter to continue..."))
+
+print("temperature converter")
