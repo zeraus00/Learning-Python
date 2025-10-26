@@ -138,4 +138,28 @@ else:
 
 print(input("\nPress Enter to continue..."))
 
-print("temperature converter")
+print("\ntemperature converter\n")
+degreeF = float(input("Enter temperature in F: "))
+degreeC = 5/9 * (degreeF - 32)
+print(f"{degreeF} F = {degreeC} C,\n")
+
+if degreeC > 30:
+    print("It's a hot day!\n")
+elif degreeC >=20:
+    print("The weather is nice and warm.\n")
+else:
+    print("It's cold outside!\n")
+
+print(input("Press Enter to continue..."))
+
+print("\nAge Calculator\n")
+birth_year = int(input("Enter your birth year: "))
+current_year = int(input("\nEnter the current year: "))
+age = current_year - birth_year
+
+if age >= 18:
+    print(f"\nHi {name}! You are {age} years old, you are of legal age.\n")
+else:
+    print(f"Hi {name}! You are {age} years old, you are underage.\n")
+
+print(input("Press enter to finish..."))
