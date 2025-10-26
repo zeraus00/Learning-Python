@@ -118,9 +118,20 @@ for number in range(1, 5):
         print("Successful\n")
         break
 
+# nested loops
 for x in range(5):
     for y in range(3):
         print(f"({x}, {y})")
+
+# rows and column generator
+rows = int(input("How many rows?: "))
+columns = int(input("how many columns?: "))
+symbol = input("Enter a symbol to use: ")
+for i in range(rows):
+    for j in range(columns):
+        print(symbol, end="")
+    print()
+
 print("while loop")
 numbers = 100
 while numbers > 0:
