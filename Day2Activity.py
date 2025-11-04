@@ -74,3 +74,6 @@ while True:
         print("Invalid weight! Please enter a number.\n")
         continue
         
+print("\nString and name analysis\n")
+print(f"\nYour name in reverse: {''.join(reversed(name))}")
+print(f"Your name in uppercase: {name.upper()}")
