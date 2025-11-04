@@ -43,3 +43,34 @@ while True:
     else:
         print("Enter a valid input! (Number only).")
 print("Press Enter to continue...")
+
+# weight converter
+
+print("\nWeight Converter\n")
+
+while True:
+    weight = input("Enter your weight: ").strip()
+    if weight.replace('.', '', 1).isdigit():
+        weight = float(weight)
+        while True:
+            unit = input("(L)bs or (K)g?: ").upper().strip()
+            if unit.isalpha():
+                if unit == "L":
+                    converted = weight * 0.45
+                    print(f"You are {converted:.2f} kilos.\n")
+                    break
+                elif unit == "K":
+                    converted = weight / 0.45
+                    print(f"You are {converted:.2f} pounds.\n")
+                    break
+                else:
+                    print("Invalid unit! Please enter 'L' or 'K' only.\n")
+                    continue
+            else:
+                print("Invalid input! Please enter valid unit(Letters only).\n")
+                continue
+        break
+    else:
+        print("Invalid weight! Please enter a number.\n")
+        continue
+        
