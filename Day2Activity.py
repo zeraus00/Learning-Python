@@ -111,3 +111,13 @@ while True:
             print("Enter a number greater than 0 for rows.\n")
     except ValueError:
         print("Please enter a valid number!\n")
+
+# Even number counter 
+count = 0
+print("\nEven numbers from 1 to 10: ")
+for even in range(1, 11):
+    if even % 2 == 0:
+        print(even, end=" ")
+        count +=1
+print(f"\nTotal even numbers: {count}")
+input("\nPress enter to continue...")
