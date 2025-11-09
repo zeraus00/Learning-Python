@@ -114,10 +114,18 @@ while True:
 
 # Even number counter 
 count = 0
-print("\nEven numbers from 1 to 10: ")
-for even in range(1, 11):
-    if even % 2 == 0:
-        print(even, end=" ")
-        count +=1
-print(f"\nTotal even numbers: {count}")
-input("\nPress enter to continue...")
+while True:
+    try:
+        even_num = int(input("Enter a number: ").strip())
+        if even_num > 0:
+            for even in range(1, even_num + 1):
+                if even % 2 == 0:
+                    print(even, end=" ")
+                    count +=1
+            print(f"\nTotal even numbers: {count}")
+            input("\nPress enter to continue...")
+            break    
+        else:
+            print("Please enter a number greater than 0!\n")
+    except ValueError:
+        print("Please enter a valid number!\n")
