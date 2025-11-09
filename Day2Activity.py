@@ -85,3 +85,29 @@ print(f"\nSiblings' list: {', '.join(siblings)}")
 print(f"\nFrom 2nd to last: {', '.join(siblings[2:])}")
 print(f"\nMiddle: {', '.join(siblings[1:4])}")
 input("\nPress Enter to continue...")
+
+# Rows and columns (Nested Loops)
+print("\nPattern Generator\n")
+while True:
+    try:
+        rows = int(input("Enter number of rows: ").strip())
+        if rows > 0:
+            while True:
+                try:
+                    cols = int(input("Enter number of columns: ").strip())
+                    if cols > 0:
+                        symbol = input("Enter a symbol to display: ").strip()
+                        for i in range(rows):
+                            for j in range(cols):
+                                print(symbol, end="")
+                            print()
+                        break
+                    else:
+                        print("Enter a number greater than 0 for columns.\n")
+                except ValueError:
+                    print("Please enter a valid number for column!\n")
+            break
+        else:
+            print("Enter a number greater than 0 for rows.\n")
+    except ValueError:
+        print("Please enter a valid number!\n")
