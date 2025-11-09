@@ -77,3 +77,11 @@ while True:
 print("\nString and name analysis\n")
 print(f"\nYour name in reverse: {''.join(reversed(name))}")
 print(f"Your name in uppercase: {name.upper()}")
+
+#//////////////////////////
+# List Operations and slicing
+siblings = ['Nalyn', 'April', 'Faith', 'Carlo']
+print(f"\nSiblings' list: {', '.join(siblings)}")
+print(f"\nFrom 2nd to last: {', '.join(siblings[2:])}")
+print(f"\nMiddle: {', '.join(siblings[1:4])}")
+input("\nPress Enter to continue...")
