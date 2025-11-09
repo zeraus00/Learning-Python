@@ -129,3 +129,11 @@ while True:
             print("Please enter a number greater than 0!\n")
     except ValueError:
         print("Please enter a valid number!\n")
+
+import time
+# countdown timer
+print("\nCountdown starting")
+for sec in range(5, 0, -1):
+    print(sec)
+    time.sleep(1)
+print("Time's Up! Program Complete!")
