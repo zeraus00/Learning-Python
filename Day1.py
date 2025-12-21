@@ -17,10 +17,35 @@ email = "Name123@fake.com"
 age = 25
 quantity = 3
 
+#float
+price = 10.99
+gpa = 3.2
+distance = 5.5
+
 print(f"Hello {first_name}")
 print(f"your favorite food is {food}")
 print(f"your email is {email}")
 print(f"You are buying {quantity} of {food}")
+#///////////////////////////////////////////////
+print(f"The price is ${price}")
+print(f"Your gpa is: {gpa}")
+print(f"You ran {distance}km")
+
+#Boolean
+is_student = True
+print(f"Are you a student?: {is_student}")
+# or
+if is_student: # is true
+    print("\nYou are a student")
+else:
+    print("\nYou are not a student")
+
+for_sale = True
+if for_sale:
+    print("\nThat item is for sale")
+else:
+    print("\nThat item is Not available")
+
 #string manipulation
 name = "Julius"
 print(f"length of name: {len(name)}\n")
