@@ -1,13 +1,26 @@
 # Printing Text
-print("Hello 'Julius' world")
-print('Hello "Julius" world')
-print("Hello \"Julius\" world")
+print("Hello 'name' world")
+print('Hello "name" world')
+print("Hello \"name\" world")
 print("Hello\nworld") # with break \n to print in the next line
-print("Julius", end = " ")# end " " prevent from new line
-print("Aboy", end = " ")
-print("Trinidad", end = " ")
+print("name", end = " ")# end " " prevent from new line
+print("middlename", end = " ")
+print("lastname", end = " ")
 print() # print only a new line to ensure the cursor moves to the next line
 
+#Strings
+first_name = "FakeName"
+food = "pizza"
+email = "Name123@fake.com"
+
+# Integers
+age = 25
+quantity = 3
+
+print(f"Hello {first_name}")
+print(f"your favorite food is {food}")
+print(f"your email is {email}")
+print(f"You are buying {quantity} of {food}")
 #string manipulation
 name = "Julius"
 print(f"length of name: {len(name)}\n")
