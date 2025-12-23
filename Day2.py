@@ -73,10 +73,10 @@ print(message)
 
 temp = int(input("What is the temperature outside?: "))
 
-if temp >= 0 and temp <= 30:
-    print("\nthe temperature is good, go outside!")
-elif temp < 0 or temp > 30:
-    print("the temperature is bad today! stay inside!")
+if 0 <= temp <= 30:
+    print("\n The temperature is good, go outside!")
+else:
+    print("The temperature is bad today! stay inside!")
 
 # weight converter
 weight = int(input('Weight: '))
