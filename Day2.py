@@ -65,8 +65,8 @@ else:
     message = "Not eligible"
 
 # using chaining 
-if 18 <= age < 65:
-    print("Eligible")
+if 18 <= age < 65: # check if age is greater than or equal to 18 and if age is less than 65
+    print("Eligible") 
 # or
 message = "Eligible" if age >= 18 else "Not eligible"
 print(message)
