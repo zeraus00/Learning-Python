@@ -70,3 +70,26 @@ else:
 discount_amount = subtotal * discount_rate
 final_total = subtotal + tax - discount_amount
 
+print("FEEDBACK")
+feedback = input("Please leave a comment about your experience: ")
+
+# you can use this to find the word if present
+# if feedback.lower().find("bad") != -1:
+#     print("we are sorry to hear that.")
+# elif feedback.lower().find("slow") != -1:
+#     print("Sorry, We will try to speed up next time!")
+# or you can use this for basic
+
+if "bad" in feedback.lower():
+    print("we are sorry to hear that.")
+elif "slow" in feedback.lower():
+    print("Sorry, We will try to speed up next time.")
+else:
+    print("Thank you for purchasing our product!")
+
+print(F"\nOFFICIAL RECEIPT FOR: {customer_name}")
+print(f"\nTotal Items: {quantity}")
+print(f"\nSubtotal: ${subtotal}")
+print(f"\nTax (12%): +${tax}")
+print(f"\nDiscount: -${discount_amount}")
+print(f"\nFINAL TOTAL: ${final_total}")
