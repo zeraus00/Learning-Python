@@ -52,3 +52,21 @@ while True:
 
 print("\nCALCULATING BILL")
 
+tax = math.ceil(subtotal * 0.12)
+discount_rate = 0.0
+
+if is_vip:
+    print("VIP Discount applied: 15% off!")
+    discount_rate = 0.15
+elif 100 < subtotal <= 500:
+    print("Standard Discount applied: 5% off!")
+    discount_rate = 0.05
+elif subtotal > 500:
+    print("Big Spender Discount applied: 10% off!")
+    discount_rate = 0.10
+else:
+    print("No discount available for this amount.")
+
+discount_amount = subtotal * discount_rate
+final_total = subtotal + tax - discount_amount
+
